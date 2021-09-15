@@ -1,6 +1,7 @@
 function compute()
 {
     p = document.getElementById("principal").value;
+	multiplicar();
     function (){
 
 	document.getElementById('formulario').reset();
