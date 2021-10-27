@@ -1,10 +1,18 @@
 body {
   background-color:white;
   text-align: center;
+  width: 200px;
+  border: 1px solid #2d2d2d;
+  display: grid;
+  justify-content: center;
 }
 h1{
   color:grey;
   text-align: center;
+  width: 200px;
+  border: 1px solid #2d2d2d;
+  display: grid;
+  justify-content: center;
 }
 text-align: center;
 
