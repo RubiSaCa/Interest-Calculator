@@ -2,7 +2,7 @@ body {
   background-color:white;
   /*text-align: center;*/
   display: grid;
-  justify-content: center;
+  /*justify-content: center;*/
   align-content: center;
 }
  h1{
