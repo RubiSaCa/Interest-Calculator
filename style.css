@@ -5,12 +5,9 @@ body {
   justify-content: center;
   align-content: center;
 }
-h1{
+ h1{
   color:grey;
-  /*text-align: center;*/
   display: grid;
   justify-content: center;
   align-content: center;
 }
-/*text-align: center;*/
-
