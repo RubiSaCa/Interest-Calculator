@@ -1,25 +1,25 @@
 function compute()
 {
+
+alert("Hello how are you doing?");
+
     p = document.getElementById("principal").value;
 	multiplicar();
-	
-    function (){
-		document.getElementById('formulario').reset();
-		}
-
- 
-
+    
 function multiplicar(){
-
-	var x = parsefloat(document.getElementById('valor1').value;
-
-	var y = parsefloat(document.getElementById('valor2').value;
-
-	var z = parsefloat(document.getElementById('valor3').value;
-
-	document.getElementById('el-resultado').innerHTML = x*y*z;
-
+  m1 = document.getElementById("rate").value;
+  m2 = document.getElementById("years").value;
+  r = m1*m2;
+  r2 = m1*m2;
+  document.getElementById("result").textContent = r;
+  document.getElementById("resultado").value = r2;
+  alert(r);
+  return r;
 }
     
 }
 
+function showtime() {
+  var now = new Date();
+  alert(now);
+}
