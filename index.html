@@ -1,4 +1,10 @@
-<body>
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <link rel="stylesheet" href="Diseno.css">
+    </head>
+    <body>
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
@@ -8,10 +14,10 @@
 
         <body>
             <div class="slider">
-              Interest Rate: <input type="range" id = "Sliters" min="0" max="50" 
-              value="1" oninput="rangeValue.innerText = 
-              this.value">
-                <p id="rangeValue">0</p>
+              Interest Rate: <input type="range" id = "Sliters" min="0" max="20" 
+              value="1" step="1" >
+              <label>0</label></p>
+                
             </div>
 
             No. of Years <select name="year" input type="number"  id="years">
