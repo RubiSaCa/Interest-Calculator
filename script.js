@@ -1,18 +1,33 @@
 var Hola2 = document.getElementsByClassName("Hola");
+var its = document.getElementById("Sliters").value;
+var input = document.querySelector("input[type=range]");
+actualizarInput(input);
 
-function compute()
-{
 
-alert("Hello how are you doing?");
 
-    var p = document.getElementById("principal").value;
+input.addEventListener("input",function(evt){
+  actualizarInput(input)
+});
+
+function actualizarInput(input){
+  var label = input.parentElement.querySelector("label");
+  label.innerHTML = input.value;
+  var inputMin = input.getAttribute("min");
+  var inputMax = input.getAttribute("max");
+  var unidad = (inputMax - inputMin) / 100;
+  input.style.setProperty("--value", (input.value - inputMin)/unidad);  
+}
+
+function compute(){
+
+  var p = document.getElementById("principal").value;
 	multiplicar();
     
 function multiplicar(){
   var m1 = document.getElementById("principal").value;
   var m2 = document.getElementById("years").value;
-  var its = document.getElementById("Sliters").value;
-  r = m1*m2*((its/100)+1);
+
+  r = m1*m2*((input/100)+1);
 
   parseInt(r);
   Hola2.innerText = r;
@@ -20,10 +35,8 @@ function multiplicar(){
   showtime();
   console.log(Hola2);
   return r;
+  
 }
-
-
-    
 }
 
 function showtime() {
